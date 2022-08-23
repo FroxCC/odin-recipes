@@ -1,42 +1,114 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Odin Recipes</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-              theme: {
-                extend: {
-                  colors: {
-                    clifford: '#da373d',
-                  }
-                }
-              }
-            }
-         </script>
-        <style type="text/tailwindcss">
-            @layer utilities {
-                .content-auto {
-                content-visibility: auto;
-                }
-            }
-        </style>
-    </head>
-    <body>
-        <h1 class="text-3xl font-bold">Odin Recipes</h1>
-        <ul>
-            <li><a href="recipes/pique.html">Pique Macho</a></li>
-            <li><a href="recipes/broasterchicken.html">Broaster-Chicken</a></li>
-            <li><a href="recipes/ramen.html">Ramen</a></li>
-        </ul>
-        
-        
-        <script src="" async defer></script>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Odin Recipes</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title-text">
+      <h1 class="text-5xl font-bold text-center">Odin Recipes</h1>
+    </div>
+    <div class="recipes-list">
+      <ul>
+        <li>
+          <a
+            href="recipes/pique.html"
+            class="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+          >
+            <img
+              class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+              src="https://cdn.bolivia.com/sdi/2018/02/27/como-preparar-el-mejor-pique-macho-boliviano-613772.jpg"
+              alt=""
+            />
+            <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Pique Macho
+              </h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-justify">
+                Pique macho or pique a lo macho is the dish par excellence of
+                Bolivian cuisine and the most emblematic.
+              </p>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="recipes/broasterchicken.html"
+            class="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+          >
+            <img
+              class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+              src="https://www.thecountrycook.net/wp-content/uploads/2021/02/thumbnail-Southern-Fried-Chicken-scaled.jpg"
+              alt=""
+            />
+            <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Broaster Chicken
+              </h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-justify">
+                This recipe was invented by the company Broaster and it is the
+                trademark of Broaster company.
+              </p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a
+            href="recipes/ramen.html"
+            class="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+          >
+            <img
+              class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+              src="https://www.forkknifeswoon.com/wp-content/uploads/2014/10/simple-homemade-chicken-ramen-fork-knife-swoon-01.jpg"
+              alt=""
+            />
+            <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Ramen
+              </h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-justify">
+                Easy homemade chicken ramen, with a flavorful broth, roasted
+                chicken, fresh veggies, lots of noodles, and a soft cooked egg.
+                Inspired by traditional Japanese ramen, but on the table in
+                under an hour.
+              </p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="" async defer></script>
+  </body>
 </html>
